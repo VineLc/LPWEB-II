@@ -1,0 +1,13 @@
+php artisan serve
+php artisan migration:refresh --seed  
+php artisan migrate
+
+php artisan make:model Veiculo -m 
+php artisan make:controller VeiculosController --resource
+
+php artisan make:model Admin -m 
+php artisan make:controller AdminsController --resource
+
+php artisan route:list
+
+php artisan make:auth
